@@ -1,29 +1,58 @@
 {
-  "name": "akashic-blog-admin",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.4.2",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
-    "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.44.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.1",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.0"
-  }
+    "name": "akashic-blog-admin",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "lint:fix": "eslint --fix src --ext ts,tsx",
+        "preview": "vite preview",
+        "emulator": "firebase emulators:start",
+        "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
+        "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\""
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@hookform/resolvers": "^3.1.1",
+        "@mui/icons-material": "^5.14.1",
+        "@mui/material": "^5.14.1",
+        "@mui/x-date-pickers": "^6.10.0",
+        "@reduxjs/toolkit": "^1.9.5",
+        "axios": "^1.4.0",
+        "chart.js": "^4.3.0",
+        "dayjs": "^1.11.9",
+        "firebase": "^10.0.0",
+        "i18next": "^23.2.11",
+        "i18next-browser-languagedetector": "^7.1.0",
+        "lodash": "^4.17.21",
+        "material-react-table": "^1.14.0",
+        "notistack": "^3.0.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hook-form": "^7.45.2",
+        "react-i18next": "^13.0.2",
+        "react-redux": "^8.1.1",
+        "react-router-dom": "^6.14.2",
+        "redux-thunk": "^2.4.2",
+        "socket.io-client": "^4.7.1",
+        "swr": "^2.2.0",
+        "yup": "^1.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.4.2",
+        "@types/react": "^18.2.14",
+        "@types/react-dom": "^18.2.6",
+        "@typescript-eslint/eslint-plugin": "^5.61.0",
+        "@typescript-eslint/parser": "^5.61.0",
+        "@vitejs/plugin-react-swc": "^3.3.2",
+        "dotenv": "^16.3.1",
+        "eslint": "^8.44.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.1",
+        "typescript": "^5.0.2",
+        "vite": "^4.4.0"
+    }
 }
