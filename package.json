@@ -11,7 +11,8 @@
         "preview": "vite preview",
         "emulator": "firebase emulators:start",
         "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
-        "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\""
+        "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
+        "deploy": "tsc && vite build && firebase deploy --only hosting"
     },
     "dependencies": {
         "@emotion/react": "^11.11.1",
