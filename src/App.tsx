@@ -1,19 +1,23 @@
 import { GlobalProvider } from './context'
-import { CssBaseline, ThemeProvider } from '@mui/material'
 import { SnackbarProvider } from 'notistack'
 import router from './routes'
 import { RouterProvider } from 'react-router-dom'
+import { Providers as ThemeProvider } from './theme/provider'
+import { store } from './store'
+import { Provider } from 'react-redux'
+import { SnackbarConfig } from './config'
 
 function App() {
     return (
-        <GlobalProvider>
-            <SnackbarProvider maxSnack={3} anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}>
-                <ThemeProvider theme={''}>
-                    <CssBaseline />
-                    <RouterProvider router={router} />
+        <Provider store={store}>
+            <GlobalProvider>
+                <ThemeProvider>
+                    <SnackbarProvider {...SnackbarConfig}>
+                        <RouterProvider router={router} />
+                    </SnackbarProvider>
                 </ThemeProvider>
-            </SnackbarProvider>
-        </GlobalProvider>
+            </GlobalProvider>
+        </Provider>
     )
 }
 

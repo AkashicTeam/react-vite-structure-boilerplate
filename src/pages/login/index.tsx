@@ -1,3 +1,25 @@
+import { Button, Typography } from '@mui/material'
+import { enqueueSnackbar } from 'notistack'
+import { useEffect, useState } from 'react'
+import { fetchToken, onMessageListener } from '~/firebase-config'
+
 export default function LoginPage() {
-    return <>Login Page</>
+    const [isTokenFound, setTokenFound] = useState(false)
+
+    fetchToken(setTokenFound)
+    onMessageListener()
+        .then((payload: any) => {
+            enqueueSnackbar(payload.notification.title, { variant: 'success' })
+        })
+        .catch((err) => console.log('failed: ', err))
+
+    return (
+        <>
+            {isTokenFound ? (
+                <Typography variant='body1'>Notification permission enabled</Typography>
+            ) : (
+                <Typography variant='body1'>Need notification permission</Typography>
+            )}
+        </>
+    )
 }
