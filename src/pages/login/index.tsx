@@ -9,7 +9,7 @@ export default function LoginPage() {
     console.log('Hellooooooo243234324 adsadasd')
     console.log('Hellooooooo243234324 adsadasd')
     console.log('Hellooooooo243234324 adsadasd')
-    console.log('Hellooooooo243234324 adsadasd')
+    console.log('Hellooooooo243234324 adsadasfd')
     fetchToken(setTokenFound)
     onMessageListener()
         .then((payload: any) => {
