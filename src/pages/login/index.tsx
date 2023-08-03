@@ -7,6 +7,7 @@ export default function LoginPage() {
     const [isTokenFound, setTokenFound] = useState(false)
     console.log('Helloooooooadsasdas asdasd ')
     console.log('Hellooooooo243234324 adsadasd')
+    console.log('Hellooooooo243234324 adsadasd')
     fetchToken(setTokenFound)
     onMessageListener()
         .then((payload: any) => {
