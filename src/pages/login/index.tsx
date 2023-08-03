@@ -5,7 +5,7 @@ import { fetchToken, onMessageListener } from '~/firebase-config'
 
 export default function LoginPage() {
     const [isTokenFound, setTokenFound] = useState(false)
-    console.log('Hellooooooo')
+    console.log('Helloooooooadsasdas asdasd ')
     console.log('Hellooooooo243234324')
     fetchToken(setTokenFound)
     onMessageListener()
