@@ -4,4 +4,4 @@ declare module '@mui/material/Button' {
         border: true
     }
 }
-export { }
+export {}

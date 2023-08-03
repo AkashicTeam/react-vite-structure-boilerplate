@@ -1,4 +1,2 @@
-import * as SnackbarConfig from "./snackbar"
-export {
-    SnackbarConfig
-}
+import * as SnackbarConfig from './snackbar'
+export { SnackbarConfig }

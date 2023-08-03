@@ -15,8 +15,7 @@ const getDesignTokens = (mode: ModeType) => ({
     },
 
     //-------Styling components-------
-    components: {
-    }
+    components: {}
 })
 
 export default getDesignTokens

@@ -1,2 +1,1 @@
-export const darkMode = {
-}
+export const darkMode = {}

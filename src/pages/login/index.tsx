@@ -1,6 +1,6 @@
-import { Button, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import { enqueueSnackbar } from 'notistack'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { fetchToken, onMessageListener } from '~/firebase-config'
 
 export default function LoginPage() {

@@ -80,6 +80,4 @@
  
 */
 
-export const lightMode = {
-    
-}
+export const lightMode = {}

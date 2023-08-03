@@ -1,9 +1,10 @@
-import { SnackbarProviderProps } from "notistack"
+import { SnackbarProviderProps } from 'notistack'
 
 const config: SnackbarProviderProps = {
     maxSnack: 3,
     anchorOrigin: {
-        horizontal: 'left', vertical: 'bottom'
+        horizontal: 'left',
+        vertical: 'bottom'
     }
 }
 
