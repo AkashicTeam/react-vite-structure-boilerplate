@@ -11,7 +11,7 @@ template: |
 categories:
     - title: 🚀 Features
       labels:
-          - feature
+          - feat
           - enhancement
     - title: 🐛 Bug Fixes
       labels:
